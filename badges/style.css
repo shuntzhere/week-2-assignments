@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+body {
+  background-color: rgb(224, 222, 222);
+}
+
+.container {
+  margin-top: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  width: 400px;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+p {
+  padding: 0.5rem;
+  position: relative;
+}
+
+.button {
+  padding: 1rem;
+  margin-left: 0.5rem;
+  border: none;
+  background-color: #221c94;
+  display: inline-block;
+  text-decoration: none;
+  min-width: 64px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.hide-badge {
+  background-color: white;
+  color: black;
+  box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+}
+
+span {
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.val-1 {
+  width: 15px;
+  height: 15px;
+  top: 0%;
+  left: 25%;
+  background-color: blue;
+}
+
+.val-2 {
+  width: 20px;
+  height: 20px;
+  top: -5px;
+  left: 28%;
+  background-color: blue;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.val-3 {
+  width: 20px;
+  height: 20px;
+  top: -5px;
+  left: 42%;
+  background-color: hotpink;
+}
+
+.val-4 {
+  width: 20px;
+  height: 20px;
+  top: -5px;
+  left: 58%;
+  background-color: blue;
+}
