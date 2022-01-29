@@ -11,42 +11,62 @@ body {
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 
-.container {
+.parent-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .snackbar {
-  display: none;
-  padding: 1rem;
-  width: 450px;
+  visibility: hidden;
+  margin: 0.2rem;
+  background-color: yellow;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  width: 500px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.7);
-  font-size: 1.1rem;
-  align-items: center;
+  background-color: rgb(0, 0, 0);
+  font-size: 1rem;
   border-radius: 2%;
   position: absolute;
-  bottom: 5px;
 }
 
-.snackbar.show {
+.snackbar.show-baseline {
+  /* display: block; */
+  bottom: 0;
+}
+
+.show-leading {
+  left: 0;
+  bottom: 0;
+}
+
+.show-stacked {
+  flex-direction: column;
+  bottom: 0;
+  /* right: 20%; */
+}
+
+.right {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.snackbar-message {
-  font-size: 1.1rem;
-  color: rgb(196, 41, 196);
+.text {
+  color: purple;
+  margin-right: 1rem;
 }
 
-.btn {
+.btn-div > button {
   border: none;
   padding: 1rem;
   height: 50px;
@@ -59,7 +79,7 @@ body {
   color: white;
 }
 
-.btn:hover {
+button:hover {
   opacity: 0.8;
   box-shadow: 1px 1px 5px rgb(165, 151, 151);
 }

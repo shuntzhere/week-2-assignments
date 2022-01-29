@@ -7,17 +7,49 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Snackbar</title>
   </head>
+
   <body>
-    <div class="container">
-      <div class="snackbar">
-        <p class="snackbar-description">
-          Can't send photo. Retry in 5 seconds.
-        </p>
-        <h2 class="snackbar-message">RETRY</h2>
-        <i class="fas fa-times"></i>
+    <div class="parent-div">
+      <div class="btn-div">
+        <button class="baseline-btn">Baseline</button>
+        <button class="leading-btn">Leading</button>
+        <button class="stacked-btn">Stacked</button>
       </div>
-      <button class="btn">Baseline</button>
+      <div class="main-div">
+        <div class="snackbar show-baseline">
+          <div class="left">
+            <div>Can't send photo.Retry in 5 seconds</div>
+          </div>
+          <div class="right">
+            <div class="text">RETRY</div>
+            <i class="fas fa-times" id="close"></i>
+          </div>
+        </div>
+
+        <div class="snackbar show-leading">
+          <div class="left">
+            <div>Your photo has been archived</div>
+          </div>
+          <div class="right">
+            <div class="text">UNDO</div>
+            <i class="fas fa-times" id="close"></i>
+          </div>
+        </div>
+
+        <div class="snackbar show-stacked">
+          <div class="left">
+            <div>
+              This item already has the label 'travel'. You can add a new label
+            </div>
+          </div>
+          <div class="right right-stacked">
+            <div class="text">ADD A NEW LABEL</div>
+            <i class="fas fa-times" id="close"></i>
+          </div>
+        </div>
+      </div>
     </div>
+
     <script
       src="https://kit.fontawesome.com/55aa2069c0.js"
       crossorigin="anonymous"
